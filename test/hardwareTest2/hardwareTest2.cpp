@@ -36,6 +36,7 @@ void setup(){
   emw3.begin(NULL);
   epd.fillScreen(GxEPD_WHITE);
   emw3.blockedDisplay(0);
+  delay(3000);
   if(!SD.begin(_DEFINA_SD_CS_PIN)){
     sd_in = 0;
     Serial.println("SD not available!");
